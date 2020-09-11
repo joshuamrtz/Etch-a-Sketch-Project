@@ -46,7 +46,7 @@ createGrid();
 function newGrid(userInput) {
     const dblUserInput = (userInput * userInput)
     grid.style.gridTemplateColumns = `repeat(${userInput}, 2fr)`
-    grid.style.grodTemplateRows = `repeat(${userInput}, 2fr)`
+    grid.style.gridTemplateRows = `repeat(${userInput}, 2fr)`
     for (let i = 0; i < dblUserInput; i++) {
         const div = document.createElement('div');
         div.classList.add('square');
