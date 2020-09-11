@@ -68,6 +68,8 @@ buttons.addEventListener('click', function(e) {
     }
     else if (e.target.className == 'reset') {
         removeGrid();
+        grid.style.gridTemplateColumns = 'repeat(16, 2fr)';
+        grid.style.gridTemplateRows = 'repeat(16, 2fr)';
         createGrid(16);
     }
     else if (e.target.className == 'new-grid') {
